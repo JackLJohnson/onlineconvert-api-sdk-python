@@ -31,16 +31,21 @@ class Conversion(object):
         :param dict attributeMap: The key is attribute name and the value is json key in definition.
         """
         self.swagger_types = {
+            'id': 'str',
             'target': 'str',
             'category': 'str',
             'options': 'Object'
         }
 
         self.attribute_map = {
+            'id': 'id',
             'target': 'target',
             'category': 'category',
             'options': 'options'
         }
+        
+        # Identifier for the job conversion.
+        self.id = None  # str
         
         # Identifier for the job conversion type.
         self.target = None  # str

@@ -37,7 +37,7 @@ class OutputApi(object):
             self.api_client = api_client
         else:
             if not configuration.api_client:
-                configuration.api_client = ApiClient('http://api2.akokine.de')
+                configuration.api_client = ApiClient('http://api2.online-convert.com')
             self.api_client = configuration.api_client
     
     
@@ -84,13 +84,13 @@ class OutputApi(object):
         if 'input_id' in params:
             query_params['input_id'] = params['input_id']
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -157,13 +157,13 @@ class OutputApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -230,13 +230,13 @@ class OutputApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}

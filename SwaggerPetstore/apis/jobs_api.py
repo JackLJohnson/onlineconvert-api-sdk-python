@@ -37,7 +37,7 @@ class JobsApi(object):
             self.api_client = api_client
         else:
             if not configuration.api_client:
-                configuration.api_client = ApiClient('http://api2.akokine.de')
+                configuration.api_client = ApiClient('http://api2.online-convert.com')
             self.api_client = configuration.api_client
     
     
@@ -73,9 +73,6 @@ class JobsApi(object):
         if 'status' in params:
             query_params['status'] = params['status']
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         if 'page' in params:
             query_params['page'] = params['page']
         
@@ -83,6 +80,9 @@ class JobsApi(object):
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -141,10 +141,10 @@ class JobsApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -206,13 +206,13 @@ class JobsApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -271,13 +271,13 @@ class JobsApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -341,13 +341,13 @@ class JobsApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
@@ -409,13 +409,13 @@ class JobsApi(object):
         
         query_params = {}
         
-        if 'key' in params:
-            query_params['key'] = params['key']
-        
         header_params = {}
         
         if 'token' in params:
             header_params['token'] = params['token']
+        
+        if 'key' in params:
+            header_params['key'] = params['key']
         
         form_params = {}
         files = {}
