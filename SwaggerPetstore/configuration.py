@@ -22,7 +22,7 @@ def auth_settings():
            }
 
 # Default Base url
-host = "http://api2.online-convert.com"
+host = "http://api2.online-convert.com/"
 
 # Default api client
 api_client = None

@@ -7,6 +7,5 @@ from .output_file import OutputFile
 from .conversion import Conversion
 from .thread import Thread
 from .status import Status
-from .link import Link
 from .error import Error
 

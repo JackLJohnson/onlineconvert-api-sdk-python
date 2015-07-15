@@ -37,7 +37,7 @@ class ConversionApi(object):
             self.api_client = api_client
         else:
             if not configuration.api_client:
-                configuration.api_client = ApiClient('http://api2.online-convert.com')
+                configuration.api_client = ApiClient('http://api2.online-convert.com/')
             self.api_client = configuration.api_client
     
     
@@ -46,8 +46,8 @@ class ConversionApi(object):
         Get list of conversions defined for the current job.
         
 
-        :param str token: Token for authentication. 
-        :param str key: Api key for the user to filter. 
+        :param str x_oc_token: Token for authentication for the current job 
+        :param str x_oc_api_key: Api key for the user to filter. 
         :param str job_id: ID of job that needs to be fetched (required)
         
         :return: list[Conversion]
@@ -57,7 +57,7 @@ class ConversionApi(object):
         if job_id is None:
             raise ValueError("Missing the required parameter `job_id` when calling `jobs_job_id_conversions_get`")
         
-        all_params = ['token', 'key', 'job_id']
+        all_params = ['x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for key, val in iteritems(params['kwargs']):
@@ -78,11 +78,11 @@ class ConversionApi(object):
         
         header_params = {}
         
-        if 'token' in params:
-            header_params['token'] = params['token']
+        if 'x_oc_token' in params:
+            header_params['X-Oc-Token'] = params['x_oc_token']
         
-        if 'key' in params:
-            header_params['key'] = params['key']
+        if 'x_oc_api_key' in params:
+            header_params['X-Oc-Api-Key'] = params['x_oc_api_key']
         
         form_params = {}
         files = {}
@@ -112,8 +112,8 @@ class ConversionApi(object):
         
 
         :param Conversion body: information for the conversion. (required)
-        :param str token: Token for authentication. 
-        :param str key: Api key for the user to filter. 
+        :param str x_oc_token: Token for authentication for the current job 
+        :param str x_oc_api_key: Api key for the user to filter. 
         :param str job_id: ID of job that needs to be fetched (required)
         
         :return: Conversion
@@ -127,7 +127,7 @@ class ConversionApi(object):
         if job_id is None:
             raise ValueError("Missing the required parameter `job_id` when calling `jobs_job_id_conversions_post`")
         
-        all_params = ['body', 'token', 'key', 'job_id']
+        all_params = ['body', 'x_oc_token', 'x_oc_api_key', 'job_id']
 
         params = locals()
         for key, val in iteritems(params['kwargs']):
@@ -148,11 +148,11 @@ class ConversionApi(object):
         
         header_params = {}
         
-        if 'token' in params:
-            header_params['token'] = params['token']
+        if 'x_oc_token' in params:
+            header_params['X-Oc-Token'] = params['x_oc_token']
         
-        if 'key' in params:
-            header_params['key'] = params['key']
+        if 'x_oc_api_key' in params:
+            header_params['X-Oc-Api-Key'] = params['x_oc_api_key']
         
         form_params = {}
         files = {}
@@ -184,8 +184,8 @@ class ConversionApi(object):
         Get list of conversions defined for the current job.
         
 
-        :param str token: Token for authentication. 
-        :param str key: Api key for the user to filter. 
+        :param str x_oc_token: Token for authentication for the current job 
+        :param str x_oc_api_key: Api key for the user to filter. 
         :param str job_id: ID of job that needs to be fetched (required)
         :param str conversion_id: Identifier for the job conversion. (required)
         
@@ -200,7 +200,7 @@ class ConversionApi(object):
         if conversion_id is None:
             raise ValueError("Missing the required parameter `conversion_id` when calling `jobs_job_id_conversions_conversion_id_get`")
         
-        all_params = ['token', 'key', 'job_id', 'conversion_id']
+        all_params = ['x_oc_token', 'x_oc_api_key', 'job_id', 'conversion_id']
 
         params = locals()
         for key, val in iteritems(params['kwargs']):
@@ -224,11 +224,11 @@ class ConversionApi(object):
         
         header_params = {}
         
-        if 'token' in params:
-            header_params['token'] = params['token']
+        if 'x_oc_token' in params:
+            header_params['X-Oc-Token'] = params['x_oc_token']
         
-        if 'key' in params:
-            header_params['key'] = params['key']
+        if 'x_oc_api_key' in params:
+            header_params['X-Oc-Api-Key'] = params['x_oc_api_key']
         
         form_params = {}
         files = {}
@@ -257,8 +257,8 @@ class ConversionApi(object):
         Removes the conversion for a job.
         
 
-        :param str token: Token for authentication. 
-        :param str key: Api key for the user to filter. 
+        :param str x_oc_token: Token for authentication for the current job 
+        :param str x_oc_api_key: Api key for the user to filter. 
         :param str job_id: ID of job that needs to be fetched (required)
         :param str conversion_id: Identifier for the job conversion. (required)
         
@@ -273,7 +273,7 @@ class ConversionApi(object):
         if conversion_id is None:
             raise ValueError("Missing the required parameter `conversion_id` when calling `jobs_job_id_conversions_conversion_id_delete`")
         
-        all_params = ['token', 'key', 'job_id', 'conversion_id']
+        all_params = ['x_oc_token', 'x_oc_api_key', 'job_id', 'conversion_id']
 
         params = locals()
         for key, val in iteritems(params['kwargs']):
@@ -297,11 +297,11 @@ class ConversionApi(object):
         
         header_params = {}
         
-        if 'token' in params:
-            header_params['token'] = params['token']
+        if 'x_oc_token' in params:
+            header_params['X-Oc-Token'] = params['x_oc_token']
         
-        if 'key' in params:
-            header_params['key'] = params['key']
+        if 'x_oc_api_key' in params:
+            header_params['X-Oc-Api-Key'] = params['x_oc_api_key']
         
         form_params = {}
         files = {}

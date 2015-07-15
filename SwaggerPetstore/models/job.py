@@ -36,7 +36,6 @@ class Job(object):
             'type': 'str',
             'status': 'Status',
             'process': 'bool',
-            'test': 'bool',
             'conversion': 'list[Conversion]',
             'input': 'list[InputFile]',
             'callback': 'str',
@@ -51,7 +50,6 @@ class Job(object):
             'type': 'type',
             'status': 'status',
             'process': 'process',
-            'test': 'test',
             'conversion': 'conversion',
             'input': 'input',
             'callback': 'callback',
@@ -74,9 +72,6 @@ class Job(object):
         
         # Determine if the job must be processed as soon as it is ready.
         self.process = None  # bool
-        
-        # Determine if it is a test job.
-        self.test = None  # bool
         
         # Type of conversion or conversions to be carried out.
         self.conversion = None  # list[Conversion]

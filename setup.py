@@ -16,9 +16,9 @@ REQUIRES = ["urllib3 >= 1.10", "six >= 1.9", "certifi"]
 
 setup(
     name="SwaggerPetstore",
-    version="2.0.0",
+    version="2.0.1",
     description="Online Convert",
-    author_email="",
+    author_email="time2talk@online-convert.com",
     url="",
     keywords=["Swagger", "Online Convert"],
     install_requires=REQUIRES,

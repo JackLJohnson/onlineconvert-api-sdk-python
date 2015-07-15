@@ -37,7 +37,7 @@ class InformationApi(object):
             self.api_client = api_client
         else:
             if not configuration.api_client:
-                configuration.api_client = ApiClient('http://api2.online-convert.com')
+                configuration.api_client = ApiClient('http://api2.online-convert.com/')
             self.api_client = configuration.api_client
     
     
