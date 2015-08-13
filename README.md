@@ -6,7 +6,7 @@ Since the API version 2 follows the [Swagger specs](http://swagger.io/), this co
 
 ## Requirements
 Python 2.7 and later.
-Before using the SDK, a valid account at [Online Convert](http://www.online-convert.com/) is needed in order to get an API key.
+Before using the SDK, a valid account at [Online-Convert.com](http://www.online-convert.com/) is needed in order to get an API key.
 
 ## Features
   - The SDK allows to make file conversions using the [Online-Convert.com](http://www.online-convert.com/) API.
